@@ -1,5 +1,4 @@
 package dev.java10x.CadastroDeNinjas.Missoes;
-
 import dev.java10x.CadastroDeNinjas.Ninjas.Controller.NinjaModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -22,10 +21,7 @@ public class MissoesModel {
 
     private String nome;
     private String dificuldade;
-    private NinjaModel ninja;
-
     private String nomeHokageSolicitante;
-
     // Uma missão pode ter vários ninjas, uma lista de ninjas
     @OneToMany(mappedBy = "missoes")
     private List<NinjaModel> ninjas;
