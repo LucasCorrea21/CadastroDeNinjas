@@ -3,7 +3,8 @@ package dev.java10x.CadastroDeNinjas.Ninjas.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping
+@RequestMapping("/ninjas") // prefixo base
+
 public class NinjaController {
     @GetMapping("/boasvindas")
     public String boasvindas(){
@@ -40,5 +41,4 @@ public class NinjaController {
     public String deletarNinjaPorID(){
         return "Deleta Ninja Ninjas Por ID";
     }
-
 }
