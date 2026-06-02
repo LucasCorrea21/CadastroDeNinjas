@@ -12,7 +12,7 @@ public class MissoesController {
         return"Missões listadas com sucesso";
     }
     //Mandar uma requisição para criar  as missões
-    @PostMapping("criar")
+    @PostMapping("/criar")
     public String criarMissao() {
         return "Criando missão";
     }
